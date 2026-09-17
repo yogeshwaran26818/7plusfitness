@@ -1,0 +1,19 @@
+# Environment / secrets
+backend/.env
+.env
+.env.*
+
+# Node / frontend build artifacts
+frontend/node_modules/
+frontend/build/
+frontend/.eslintcache
+
+# Python
+backend/__pycache__/
+backend/.venv/
+backend/*.pyc
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/

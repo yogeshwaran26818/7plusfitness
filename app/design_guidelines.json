@@ -1,0 +1,137 @@
+{
+  "project_name": "7plus Fitness",
+  "archetype": "THE PERFORMANCE PRO (Dark Theme with Kinetic Volt Accents)",
+  "context": "Award-worthy (Awwwards Site-of-the-Day level) single-page marketing and booking site for '7plus Fitness', a boutique strength & HIIT studio located in Chennai, Tamil Nadu, India.",
+  "theme": {
+    "mode": "dark",
+    "background": "#0B0C0E",
+    "card_background": "#14161B",
+    "surface_elevated": "#1A1D24",
+    "border_color": "#222630",
+    "border_highlight": "#313745",
+    "primary_text": "#F8FAFC",
+    "secondary_text": "#94A3B8",
+    "accent_cyan": "#00F0FF",
+    "accent_lime": "#CCFF00",
+    "accent_orange": "#FF5500"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "'Barlow Condensed', 'Cabinet Grotesk', sans-serif",
+      "weights": ["700", "800", "900"],
+      "h1_hero": "text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight uppercase leading-none",
+      "h2_section": "text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight uppercase leading-none",
+      "h3_card": "text-xl sm:text-2xl font-bold tracking-tight uppercase",
+      "eyebrow_label": "text-xs font-mono uppercase tracking-[0.25em] text-[#00F0FF]"
+    },
+    "body": {
+      "font_family": "'Plus Jakarta Sans', 'Inter', sans-serif",
+      "weights": ["400", "500", "600"],
+      "sizes": {
+        "large": "text-lg text-slate-300 leading-relaxed",
+        "standard": "text-base text-slate-400 leading-relaxed",
+        "small": "text-sm text-slate-400"
+      }
+    }
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-4 sm:px-8 lg:px-16",
+    "section_gap": "py-20 lg:py-28",
+    "card_padding": "p-6 sm:p-8",
+    "grid_strategy": "Asymmetric Bento Grid with 1px border grid system (#222630) and neon hover effects"
+  },
+  "key_sections": [
+    {
+      "section_id": "header",
+      "name": "Kinetic Glass Navigation Bar",
+      "description": "Sticky backdrop-blur navigation with 7plus Fitness brand mark, Chennai live status indicator ('STUDIO OPEN • NUNGAMBAKKAM'), navigation links (Schedule, Workouts, Trainers, Pricing, Location), and primary CTA 'Book Trial Class'. Includes dark theme toggle."
+    },
+    {
+      "section_id": "hero",
+      "name": "Kinetic Hero with Masked Reveal",
+      "description": "High-energy athletic background with gradient overlay (from-black/90 via-black/60 to-transparent). Masked line-by-line staggered text reveal: 'ENGINEERED FOR STRENGTH. FORGED IN CHENNAI.' Quick metrics counter badges (700+ Members, 4.9★ Google Rating, 3 Core Disciplines), prominent 'Book a Class' primary CTA with kinetic arrow animation."
+    },
+    {
+      "section_id": "marquee",
+      "name": "Editorial Motivation Ticker",
+      "description": "Slow, smooth drifting continuous marquee with low-contrast neon outline text ('7PLUS FITNESS • STRENGTH & HIIT STUDIO • NUNGAMBAKKAM CHENNAI • UNCOMPROMISING PERFORMANCE')."
+    },
+    {
+      "section_id": "manifesto",
+      "name": "Numbered Manifesto Chapters",
+      "description": "Swiss-grid chapter cards: '01 THE CODE (Scientific Programming)', '02 METABOLIC CAPACITY (HIIT & Conditioning)', '03 RECOVERY & MOBILITY (Longevity & Prehab)'."
+    },
+    {
+      "section_id": "schedule",
+      "name": "Interactive Class Timetable & Quick Reservation",
+      "description": "Daily schedule filter (Mon to Sun) and Intensity filter (Beginner, Intermediate, Advanced). Displays class time, workout name, trainer, duration, intensity tag, available slots counter, and 'Reserve Spot' button that triggers instant modal reservation flow."
+    },
+    {
+      "section_id": "workout_styles",
+      "name": "Workout Styles Bento Cards",
+      "description": "Interactive cards for 3 core pillars: 1. HIIT & Conditioning, 2. Heavy Strength & Hypertrophy, 3. Functional Mobility & Recovery. Includes workout structure, target energy system, and equipment used."
+    },
+    {
+      "section_id": "trainers",
+      "name": "Trainer Profiles",
+      "description": "Spotlight cards for Chennai's top coaches (e.g. Head Coach Vikram Ram, Coach Ananya Suresh, Coach Karthik Raja) with certifications (CSCS, Kinstretch, ISSA), specialties, athletic bios, and photo overlays."
+    },
+    {
+      "section_id": "pricing",
+      "name": "Pricing & Memberships",
+      "description": "Tiered pass cards: Drop-in Pass (₹850), 10-Class Pack (₹7,500), Monthly Unlimited Pass (₹6,999/mo), Personal Training (₹18,000/12 sessions). Toggle for Individual vs Corporate/Group packages and GST inclusion indicator."
+    },
+    {
+      "section_id": "social_proof",
+      "name": "Transformations & Community Gallery",
+      "description": "Interactive before/after strength metric cards, verified member transformation stories, Google Reviews integration, and a grid of raw studio action shots."
+    },
+    {
+      "section_id": "location_contact",
+      "name": "Location, Interactive Map & Inquiry Form",
+      "description": "Detailed studio address: '7plus Fitness Studio, #42 Nungambakkam High Road, Opp. Taj Coromandel, Nungambakkam, Chennai, Tamil Nadu 600034'. Operating hours (5:30 AM - 9:30 PM), direct WhatsApp link, embedded interactive Google map canvas, and a trial class contact form."
+    }
+  ],
+  "image_urls": {
+    "hero_background": "https://images.pexels.com/photos/29259727/pexels-photo-29259727.jpeg",
+    "battle_ropes_hiit": "https://images.pexels.com/photos/4046704/pexels-photo-4046704.jpeg",
+    "strength_training": "https://images.pexels.com/photos/31849599/pexels-photo-31849599.jpeg",
+    "rest_recovery": "https://images.pexels.com/photos/3838705/pexels-photo-3838705.jpeg",
+    "personal_coaching": "https://images.pexels.com/photos/36120641/pexels-photo-36120641.png",
+    "trainer_male_1": "https://images.unsplash.com/photo-1758875568823-34bdf47b82dc?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "trainer_male_2": "https://images.unsplash.com/photo-1759300642261-6a1dcd0d19f6?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "trainer_female_1": "https://images.unsplash.com/photo-1781191063026-74332a61d527?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "gym_biceps": "https://images.pexels.com/photos/3888405/pexels-photo-3888405.jpeg"
+  },
+  "interactive_flows": {
+    "quick_reservation": {
+      "trigger": "Clicking 'Reserve Spot' on Schedule or 'Book a Class' on Hero",
+      "steps": [
+        "Select / Confirm Class details (Class, Day, Time, Trainer)",
+        "Member details form (Full Name, Email, Phone number in India format, Experience Level)",
+        "Backend POST request to /api/reservations",
+        "Interactive Confirmation Card with reservation ID, calendar export link, and WhatsApp reminder CTA"
+      ]
+    },
+    "inquiry_form": {
+      "fields": ["Name", "Phone", "Email", "Fitness Goal", "Preferred Studio Time"],
+      "action": "Submit inquiry to local Chennai team"
+    }
+  },
+  "motion_specs": {
+    "library": "framer-motion",
+    "hero_reveal": "Staggered y-axis transform (from y: 40px to 0px, opacity 0 to 1) with custom cubic-bezier ease [0.16, 1, 0.3, 1]",
+    "scroll_reveals": "Viewport threshold 0.2, initial opacity 0, y: 30px, duration 0.6s",
+    "hover_states": "Cards scale 1.015 with border glow transition from #222630 to #00F0FF",
+    "smooth_scrolling": "lenis smooth momentum scroll integration"
+  },
+  "instructions_to_main_agent": [
+    "Ensure the entire app is built in clean React JavaScript (.js / .jsx files). Do not use .tsx extensions.",
+    "Use dark background #0B0C0E as the default surface with high contrast electric accent #00F0FF and #CCFF00.",
+    "Add 'data-testid' to all buttons, input fields, schedule filters, reserve modals, and navigation links.",
+    "Implement the interactive Class Schedule with real filtering by Day and Intensity level.",
+    "Ensure local Chennai context (Nungambakkam High Road, Chennai, Tamil Nadu, India) is prominently reflected in copy, map, and address details.",
+    "Integrate Sonner for crisp toast notifications upon reserving classes or submitting trial inquiries.",
+    "Maintain high contrast text readability (WCAG AA / APCA standards) over dark backdrops and image overlays."
+  ]
+}

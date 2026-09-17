@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0b0c0e;
+  --panel: #14161b;
+  --elevated: #1a1d24;
+  --edge: #222630;
+  --volt: #ccff00;
+  --neon: #00f0ff;
+  --ember: #ff5500;
+  --background: 240 6% 5%;
+  --foreground: 200 33% 98%;
+  --border: 225 16% 16%;
+  --radius: 0.75rem;
+}
+
+@layer base {
+  body {
+    @apply bg-ink text-slate-50 font-body;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--volt);
+  color: var(--ink);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ink);
+}
+::-webkit-scrollbar-thumb {
+  background: #313745;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--volt);
+}
+
+/* Outlined display type */
+.text-outline {
+  -webkit-text-stroke: 1.5px rgba(248, 250, 252, 0.9);
+  color: transparent;
+}
+.text-outline-volt {
+  -webkit-text-stroke: 1.5px var(--volt);
+  color: transparent;
+}
+@media (max-width: 640px) {
+  .text-outline,
+  .text-outline-volt {
+    -webkit-text-stroke-width: 1px;
+  }
+}
+
+/* Editorial marquee */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  animation: marquee 22s linear infinite;
+}
+.marquee-banner:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Film grain overlay */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 256px 256px;
+}
+
+/* Dark-mode Google map */
+.map-dark {
+  filter: grayscale(100%) invert(92%) contrast(85%);
+}
+
+/* Hero mask reveal helper */
+.mask-line {
+  display: block;
+  overflow: hidden;
+}
