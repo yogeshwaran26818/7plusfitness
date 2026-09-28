@@ -64,6 +64,7 @@
   },
   "scripts": {
     "start": "craco start",
+    "vercel:dev": "vercel dev",
     "build": "craco build",
     "test": "craco test"
   },
