@@ -22,7 +22,7 @@ export default function Manifesto() {
   return (
     <section
       id="manifesto"
-      className="py-12 lg:py-16 px-4 sm:px-8 lg:px-16"
+      className="py-8 lg:py-12 px-4 sm:px-8 lg:px-16"
       data-testid="manifesto-section"
     >
       <div className="max-w-[1280px] mx-auto">
@@ -69,7 +69,7 @@ export default function Manifesto() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, delay: i * 0.12 }}
-                className="group flex gap-6 sm:gap-10 py-7 border-t border-edge last:border-b hover:bg-panel/50 transition-colors px-2 sm:px-6"
+                className="group flex gap-5 sm:gap-8 py-5 border-t border-edge last:border-b hover:bg-panel/50 transition-colors px-2 sm:px-6"
                 data-testid={`manifesto-chapter-${c.num}`}
               >
                 <span className="font-display text-5xl sm:text-7xl font-black text-edgehi group-hover:text-volt transition-colors duration-300 leading-none">

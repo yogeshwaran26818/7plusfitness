@@ -20,7 +20,7 @@ export default function Pricing() {
   return (
     <section
       id="pricing"
-      className="py-12 lg:py-16 px-4 sm:px-8 lg:px-16"
+      className="py-8 lg:py-12 px-4 sm:px-8 lg:px-16"
       data-testid="pricing-section"
     >
       <div className="max-w-[1280px] mx-auto">

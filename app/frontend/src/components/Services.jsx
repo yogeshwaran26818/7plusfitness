@@ -13,7 +13,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-12 lg:py-16 px-4 sm:px-8 lg:px-16"
+      className="py-8 lg:py-12 px-4 sm:px-8 lg:px-16"
       data-testid="services-section"
     >
       <div className="max-w-[1280px] mx-auto">

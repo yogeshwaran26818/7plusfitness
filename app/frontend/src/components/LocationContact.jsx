@@ -69,11 +69,11 @@ export default function LocationContact() {
   return (
     <section
       id="contact"
-      className="py-12 lg:py-16 px-4 sm:px-8 lg:px-16"
+      className="py-8 lg:py-12 px-4 sm:px-8 lg:px-16"
       data-testid="contact-section"
     >
       <div className="max-w-[1280px] mx-auto">
-        <div className="mb-14">
+        <div className="mb-10">
           <p className="text-xs font-mono uppercase tracking-[0.3em] text-neon mb-4">
             Location & Contact
           </p>
@@ -82,9 +82,9 @@ export default function LocationContact() {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           <div>
-            <div className="bg-panel border border-edge rounded-2xl p-7 sm:p-8 space-y-6">
+            <div className="bg-panel border border-edge rounded-2xl p-6 sm:p-7 space-y-4">
               <div className="flex gap-4" data-testid="contact-address">
                 <MapPin className="text-volt shrink-0 mt-0.5" size={20} />
                 <div>
@@ -106,7 +106,7 @@ export default function LocationContact() {
                 </div>
               </div>
               <div
-                className="flex gap-4 border-t border-edge pt-6"
+                className="flex gap-4 border-t border-edge pt-4"
                 data-testid="contact-hours"
               >
                 <Clock className="text-volt shrink-0 mt-0.5" size={20} />
@@ -120,7 +120,7 @@ export default function LocationContact() {
                 </div>
               </div>
               <div
-                className="flex flex-col sm:flex-row gap-3 border-t border-edge pt-6"
+                className="flex flex-col sm:flex-row gap-3 border-t border-edge pt-4"
                 data-testid="contact-actions"
               >
                 <a
@@ -140,7 +140,7 @@ export default function LocationContact() {
                   <MessageCircle size={16} /> WhatsApp Us
                 </a>
               </div>
-              <p className="flex items-center gap-2 text-xs text-slate-500 border-t border-edge pt-6">
+              <p className="flex items-center gap-2 text-xs text-slate-500 border-t border-edge pt-4">
                 <Mail size={13} /> {STUDIO.email}
               </p>
             </div>

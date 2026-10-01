@@ -23,7 +23,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-[88vh] flex items-end"
+      className="relative min-h-[78vh] flex items-end"
       data-testid="hero-section"
     >
       <motion.div
@@ -50,13 +50,13 @@ export default function Hero() {
         initial={{ opacity: 0, y: 18 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: EASE }}
-        className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-16 pt-28 pb-16 lg:pb-20"
+        className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-16 pt-20 pb-12 lg:pb-16"
       >
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.15, ease: EASE }}
-          className="text-xs sm:text-sm font-mono uppercase tracking-[0.3em] text-neon mb-6 flex items-center gap-3"
+          className="text-xs sm:text-sm font-mono uppercase tracking-[0.3em] text-neon mb-4 flex items-center gap-3"
           data-testid="hero-eyebrow"
         >
           <span className="w-10 h-px bg-neon inline-block" />
@@ -76,7 +76,7 @@ export default function Hero() {
           </MaskLine>
         </h1>
 
-        <div className="mt-8 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10">
+        <div className="mt-6 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -97,7 +97,7 @@ export default function Hero() {
             <button
               data-testid="hero-cta-book"
               onClick={() => scrollToId("contact")}
-              className="group inline-flex items-center gap-3 bg-volt text-ink font-display font-extrabold uppercase tracking-wide text-xl px-8 py-4 rounded-full hover:bg-white transition-colors"
+              className="group inline-flex items-center gap-3 bg-volt text-ink font-display font-extrabold uppercase tracking-wide text-xl px-8 py-3 rounded-full hover:bg-white transition-colors"
             >
               Book a Class
               <ArrowUpRight
@@ -108,7 +108,7 @@ export default function Hero() {
             <button
               data-testid="hero-cta-pricing"
               onClick={() => scrollToId("pricing")}
-              className="inline-flex items-center gap-2 border border-slate-500/60 text-white font-semibold uppercase tracking-wider text-sm px-7 py-4 rounded-full hover:border-volt hover:text-volt transition-colors"
+              className="inline-flex items-center gap-2 border border-slate-500/60 text-white font-semibold uppercase tracking-wider text-sm px-7 py-3 rounded-full hover:border-volt hover:text-volt transition-colors"
             >
               View Passes
             </button>
@@ -119,7 +119,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.2 }}
-          className="mt-14 flex flex-wrap gap-x-10 gap-y-4 border-t border-white/10 pt-6"
+          className="mt-10 flex flex-wrap gap-x-10 gap-y-3 border-t border-white/10 pt-4"
           data-testid="hero-stats"
         >
           {[

@@ -4,7 +4,7 @@ import { STUDIO, scrollToId } from "@/data";
 export default function Footer() {
   return (
     <footer className="border-t border-edge bg-panel/60" data-testid="footer">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-16 py-10">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-16 py-8">
         <div className="grid md:grid-cols-[2fr_1fr_1fr] gap-10">
           <div>
             <div className="flex items-center gap-2">
@@ -78,7 +78,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-5 border-t border-edge flex flex-col sm:flex-row justify-between gap-3">
+        <div className="mt-6 pt-4 border-t border-edge flex flex-col sm:flex-row justify-between gap-3">
           <p className="text-xs text-slate-500">
             © 2026 7plus Fitness. All rights reserved.
           </p>

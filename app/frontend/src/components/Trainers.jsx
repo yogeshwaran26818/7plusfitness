@@ -6,7 +6,7 @@ export default function Trainers() {
   return (
     <section
       id="trainers"
-      className="py-12 lg:py-16 px-4 sm:px-8 lg:px-16"
+      className="py-8 lg:py-12 px-4 sm:px-8 lg:px-16"
       data-testid="trainers-section"
     >
       <div className="max-w-[1280px] mx-auto">
@@ -38,7 +38,7 @@ export default function Trainers() {
               className="group relative bg-panel border border-edge rounded-2xl overflow-hidden hover:border-volt/50 transition-colors"
               data-testid={`trainer-card-${t.id}`}
             >
-              <div className="relative aspect-[4/5] overflow-hidden">
+              <div className="relative aspect-[4/3] overflow-hidden">
                 <img
                   src={t.img}
                   alt={t.name}

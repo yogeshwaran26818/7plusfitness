@@ -35,7 +35,7 @@ export default function SocialProof() {
   return (
     <section
       id="proof"
-      className="py-12 lg:py-16 px-4 sm:px-8 lg:px-16"
+      className="py-8 lg:py-12 px-4 sm:px-8 lg:px-16"
       data-testid="proof-section"
     >
       <div className="max-w-[1280px] mx-auto">
@@ -82,7 +82,7 @@ export default function SocialProof() {
         </div>
 
         <div
-          className="relative overflow-hidden rounded-2xl border border-edge bg-panel p-6 sm:p-8 min-h-[250px]"
+          className="relative overflow-hidden rounded-2xl border border-edge bg-panel p-5 sm:p-7 min-h-[220px]"
           data-testid="review-carousel"
         >
           {review ? (
