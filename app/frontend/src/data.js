@@ -1,3 +1,5 @@
+import threeDisciplinesImage from "../../photo/ThreeDisciplines2..jpeg";
+
 export const API = process.env.REACT_APP_API_URL || "/api";
 
 export const apiUrl = (path) => {
@@ -355,11 +357,7 @@ export const WORKOUTS = [
     id: "strength",
     num: "02",
     title: "Heavy Strength & Hypertrophy",
-    img: optimizeImage(
-      "https://images.pexels.com/photos/31849599/pexels-photo-31849599.jpeg",
-      900,
-      75,
-    ),
+    img: threeDisciplinesImage,
     desc: "Barbell-first programming on a real strength floor. Squat, pull and press your way to measurable numbers.",
     points: [
       "Periodised squat / pull / press cycles",

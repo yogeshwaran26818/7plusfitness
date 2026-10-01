@@ -9,6 +9,7 @@ import Manifesto from "@/components/Manifesto";
 import Services from "@/components/Services";
 import WorkoutStyles from "@/components/WorkoutStyles";
 import Trainers from "@/components/Trainers";
+import GymGallery from "@/components/GymGallery";
 import Pricing from "@/components/Pricing";
 import SocialProof from "@/components/SocialProof";
 import LocationContact from "@/components/LocationContact";
@@ -89,6 +90,7 @@ export default function App() {
             <Services />
             <WorkoutStyles />
             <Trainers />
+            <GymGallery />
             <Pricing />
             <SocialProof />
             <LocationContact />

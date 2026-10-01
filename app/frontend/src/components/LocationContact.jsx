@@ -69,11 +69,11 @@ export default function LocationContact() {
   return (
     <section
       id="contact"
-      className="py-8 lg:py-12 px-4 sm:px-8 lg:px-16"
+      className="py-3 lg:py-5 px-4 sm:px-8 lg:px-16"
       data-testid="contact-section"
     >
       <div className="max-w-[1280px] mx-auto">
-        <div className="mb-10">
+        <div className="mb-4">
           <p className="text-xs font-mono uppercase tracking-[0.3em] text-neon mb-4">
             Location & Contact
           </p>
@@ -82,9 +82,9 @@ export default function LocationContact() {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid lg:grid-cols-2 gap-5 lg:gap-7">
           <div>
-            <div className="bg-panel border border-edge rounded-2xl p-6 sm:p-7 space-y-4">
+            <div className="bg-panel border border-edge rounded-2xl p-4 sm:p-5 space-y-2.5">
               <div className="flex gap-4" data-testid="contact-address">
                 <MapPin className="text-volt shrink-0 mt-0.5" size={20} />
                 <div>
@@ -146,7 +146,7 @@ export default function LocationContact() {
             </div>
 
             <div
-              className="mt-6 rounded-2xl overflow-hidden border border-edge"
+                className="mt-3 rounded-2xl overflow-hidden border border-edge"
               data-testid="contact-map"
             >
               <a
@@ -159,7 +159,7 @@ export default function LocationContact() {
                 <iframe
                   title="7 Plus Fitness Gym — Sithalapakkam, Chennai"
                   src={STUDIO.mapEmbed}
-                  className="pointer-events-none w-full h-[280px] sm:h-[340px] map-dark"
+                  className="pointer-events-none w-full h-[150px] sm:h-[180px] map-dark"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   allowFullScreen
@@ -169,7 +169,7 @@ export default function LocationContact() {
           </div>
 
           <div
-            className="bg-panel border border-edge rounded-2xl p-7 sm:p-8 self-start"
+            className="bg-panel border border-edge rounded-2xl p-4 sm:p-5 self-start"
             data-testid="trial-form-card"
           >
             <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon mb-2">
@@ -215,7 +215,7 @@ export default function LocationContact() {
             ) : (
               <form
                 onSubmit={submit}
-                className="mt-7 space-y-4"
+                className="mt-4 space-y-2.5"
                 data-testid="trial-form"
               >
                 <div className="grid sm:grid-cols-2 gap-4">
@@ -229,7 +229,7 @@ export default function LocationContact() {
                       value={form.name}
                       onChange={set("name")}
                       placeholder="Your name"
-                      className="w-full bg-elevated border border-edgehi rounded-xl px-4 py-3 text-white placeholder:text-slate-600 focus:outline-none focus:border-volt transition-colors"
+                      className="w-full bg-elevated border border-edgehi rounded-xl px-4 py-2 text-white placeholder:text-slate-600 focus:outline-none focus:border-volt transition-colors"
                     />
                   </div>
                   <div>
@@ -243,7 +243,7 @@ export default function LocationContact() {
                       value={form.phone}
                       onChange={set("phone")}
                       placeholder="+91 98xxx xxxxx"
-                      className="w-full bg-elevated border border-edgehi rounded-xl px-4 py-3 text-white placeholder:text-slate-600 focus:outline-none focus:border-volt transition-colors"
+                      className="w-full bg-elevated border border-edgehi rounded-xl px-4 py-2 text-white placeholder:text-slate-600 focus:outline-none focus:border-volt transition-colors"
                     />
                   </div>
                 </div>
@@ -258,7 +258,7 @@ export default function LocationContact() {
                     value={form.email}
                     onChange={set("email")}
                     placeholder="you@email.com"
-                    className="w-full bg-elevated border border-edgehi rounded-xl px-4 py-3 text-white placeholder:text-slate-600 focus:outline-none focus:border-volt transition-colors"
+                    className="w-full bg-elevated border border-edgehi rounded-xl px-4 py-2 text-white placeholder:text-slate-600 focus:outline-none focus:border-volt transition-colors"
                   />
                 </div>
                 <div className="grid sm:grid-cols-2 gap-4">
@@ -270,7 +270,7 @@ export default function LocationContact() {
                       data-testid="trial-input-goal"
                       value={form.goal}
                       onChange={set("goal")}
-                      className="w-full bg-elevated border border-edgehi rounded-xl px-4 py-3 text-white focus:outline-none focus:border-volt transition-colors"
+                      className="w-full bg-elevated border border-edgehi rounded-xl px-4 py-2 text-white focus:outline-none focus:border-volt transition-colors"
                     >
                       {GOALS.map((g) => (
                         <option key={g} value={g} className="bg-panel">
@@ -288,7 +288,7 @@ export default function LocationContact() {
                       type="date"
                       value={form.date}
                       onChange={set("date")}
-                      className="w-full bg-elevated border border-edgehi rounded-xl px-4 py-3 text-white focus:outline-none focus:border-volt transition-colors"
+                      className="w-full bg-elevated border border-edgehi rounded-xl px-4 py-2 text-white focus:outline-none focus:border-volt transition-colors"
                     />
                   </div>
                   <div>
@@ -299,7 +299,7 @@ export default function LocationContact() {
                       data-testid="trial-input-time"
                       value={form.preferred_time}
                       onChange={set("preferred_time")}
-                      className="w-full bg-elevated border border-edgehi rounded-xl px-4 py-3 text-white focus:outline-none focus:border-volt transition-colors"
+                      className="w-full bg-elevated border border-edgehi rounded-xl px-4 py-2 text-white focus:outline-none focus:border-volt transition-colors"
                     >
                       <option value="" className="bg-panel">
                         Any time
@@ -326,14 +326,14 @@ export default function LocationContact() {
                     value={form.message}
                     onChange={set("message")}
                     placeholder="Injuries, experience, questions…"
-                    className="w-full bg-elevated border border-edgehi rounded-xl px-4 py-3 text-white placeholder:text-slate-600 focus:outline-none focus:border-volt transition-colors resize-none"
+                    className="w-full bg-elevated border border-edgehi rounded-xl px-4 py-2 text-white placeholder:text-slate-600 focus:outline-none focus:border-volt transition-colors resize-none"
                   />
                 </div>
                 <button
                   type="submit"
                   disabled={submitting}
                   data-testid="trial-form-submit"
-                  className="w-full bg-volt text-ink font-bold uppercase tracking-wider py-4 rounded-full hover:bg-white transition-colors flex items-center justify-center gap-2 disabled:opacity-60"
+                  className="w-full bg-volt text-ink font-bold uppercase tracking-wider py-3 rounded-full hover:bg-white transition-colors flex items-center justify-center gap-2 disabled:opacity-60"
                 >
                   {submitting ? (
                     <>
