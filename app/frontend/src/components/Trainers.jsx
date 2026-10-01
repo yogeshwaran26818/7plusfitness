@@ -6,10 +6,10 @@ export default function Trainers() {
   return (
     <section
       id="trainers"
-      className="py-16 lg:py-20 px-4 sm:px-8 lg:px-16"
+      className="py-12 lg:py-16 px-4 sm:px-8 lg:px-16"
       data-testid="trainers-section"
     >
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1280px] mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
           <div>
             <p className="text-xs font-mono uppercase tracking-[0.3em] text-neon mb-4">

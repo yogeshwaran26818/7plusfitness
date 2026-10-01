@@ -51,7 +51,7 @@ export default function Navbar() {
       }`}
       data-testid="navbar"
     >
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-16 h-16 flex items-center justify-between gap-6">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-16 h-16 flex items-center justify-between gap-6">
         <button
           data-testid="nav-logo"
           onClick={() => go("hero")}

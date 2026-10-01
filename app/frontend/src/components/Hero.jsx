@@ -23,7 +23,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-end"
+      className="relative min-h-[88vh] flex items-end"
       data-testid="hero-section"
     >
       <motion.div
@@ -50,7 +50,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 18 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: EASE }}
-        className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-16 pt-36 pb-20 lg:pb-28"
+        className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-16 pt-28 pb-16 lg:pb-20"
       >
         <motion.p
           initial={{ opacity: 0, y: 16 }}

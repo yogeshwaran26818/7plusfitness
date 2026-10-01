@@ -13,10 +13,10 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-16 lg:py-20 px-4 sm:px-8 lg:px-16"
+      className="py-12 lg:py-16 px-4 sm:px-8 lg:px-16"
       data-testid="services-section"
     >
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1280px] mx-auto">
         <div className="max-w-3xl mb-12">
           <p className="text-xs font-mono uppercase tracking-[0.3em] text-neon mb-4">
             Our Services
