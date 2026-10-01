@@ -6,16 +6,16 @@ export default function Trainers() {
   return (
     <section
       id="trainers"
-      className="py-8 lg:py-12 px-4 sm:px-8 lg:px-16"
+      className="py-3 lg:py-5 px-4 sm:px-8 lg:px-16"
       data-testid="trainers-section"
     >
       <div className="max-w-[1280px] mx-auto">
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-6">
           <div>
             <p className="text-xs font-mono uppercase tracking-[0.3em] text-neon mb-4">
               The Coaches
             </p>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold uppercase leading-[0.95]">
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase leading-[0.95]">
               Coached By The
               <br />
               <span className="text-volt">Best In Chennai</span>
@@ -27,7 +27,7 @@ export default function Trainers() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-5">
           {TRAINERS.map((t, i) => (
             <motion.article
               key={t.id}
@@ -38,7 +38,7 @@ export default function Trainers() {
               className="group relative bg-panel border border-edge rounded-2xl overflow-hidden hover:border-volt/50 transition-colors"
               data-testid={`trainer-card-${t.id}`}
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[16/9] overflow-hidden">
                 <img
                   src={t.img}
                   alt={t.name}
@@ -47,9 +47,9 @@ export default function Trainers() {
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-panel via-panel/20 to-transparent" />
-                <div className="absolute bottom-0 inset-x-0 p-6">
+                <div className="absolute bottom-0 inset-x-0 p-4">
                   <h3
-                    className="font-display text-3xl font-extrabold uppercase tracking-tight"
+                    className="font-display text-2xl font-extrabold uppercase tracking-tight"
                     data-testid={`trainer-name-${t.id}`}
                   >
                     {t.name}
@@ -59,11 +59,11 @@ export default function Trainers() {
                   </p>
                 </div>
               </div>
-              <div className="p-6 sm:p-7">
+              <div className="p-4 sm:p-5">
                 <p className="text-sm text-slate-400 leading-relaxed">
                   {t.bio}
                 </p>
-                <div className="mt-5 flex flex-wrap gap-2">
+                <div className="mt-3 flex flex-wrap gap-2">
                   {t.specialties.map((s) => (
                     <span
                       key={s}
@@ -74,7 +74,7 @@ export default function Trainers() {
                   ))}
                 </div>
                 <div
-                  className="mt-4 pt-4 border-t border-edge flex flex-wrap gap-x-4 gap-y-2"
+                  className="mt-3 pt-3 border-t border-edge flex flex-wrap gap-x-4 gap-y-2"
                   data-testid={`trainer-certs-${t.id}`}
                 >
                   {t.certs.map((c) => (

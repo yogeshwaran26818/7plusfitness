@@ -4,7 +4,6 @@ import {
   MapPin,
   Clock,
   Phone,
-  Mail,
   MessageCircle,
   Send,
   Loader2,
@@ -120,29 +119,33 @@ export default function LocationContact() {
                 </div>
               </div>
               <div
-                className="flex flex-col sm:flex-row gap-3 border-t border-edge pt-4"
+                className="grid sm:grid-cols-2 gap-3 border-t border-edge pt-4"
                 data-testid="contact-actions"
               >
                 <a
-                  href={`tel:${STUDIO.phone.replace(/\s/g, "")}`}
+                  href="tel:9952949953"
+                  data-testid="contact-primary-call-link"
+                  className="flex-1 inline-flex items-center justify-center gap-2 border border-edgehi rounded-full py-3 text-sm font-bold uppercase tracking-wider hover:border-volt hover:text-volt transition-colors"
+                >
+                  <Phone size={16} /> 9952949953
+                </a>
+                <a
+                  href="tel:9566077587"
                   data-testid="contact-call-link"
                   className="flex-1 inline-flex items-center justify-center gap-2 border border-edgehi rounded-full py-3 text-sm font-bold uppercase tracking-wider hover:border-volt hover:text-volt transition-colors"
                 >
-                  <Phone size={16} /> {STUDIO.phone}
-                </a>
-                <a
-                  href={STUDIO.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-testid="contact-whatsapp-link"
-                  className="flex-1 inline-flex items-center justify-center gap-2 bg-volt text-ink rounded-full py-3 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors"
-                >
-                  <MessageCircle size={16} /> WhatsApp Us
+                  <Phone size={16} /> 95660 77587
                 </a>
               </div>
-              <p className="flex items-center gap-2 text-xs text-slate-500 border-t border-edge pt-4">
-                <Mail size={13} /> {STUDIO.email}
-              </p>
+              <a
+                href={STUDIO.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="contact-whatsapp-link"
+                className="w-full inline-flex items-center justify-center gap-2 bg-volt text-ink rounded-full py-3 text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors"
+              >
+                <MessageCircle size={16} /> WhatsApp Us
+              </a>
             </div>
 
             <div
