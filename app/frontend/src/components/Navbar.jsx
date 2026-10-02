@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { Zap, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { scrollToId } from "@/data";
+import brandLogo from "../../../photo/logo (3).png";
 
 const LINKS = [
   { label: "Services", id: "services" },
@@ -57,9 +58,11 @@ export default function Navbar() {
           onClick={() => go("hero")}
           className="flex items-center gap-2 shrink-0 group"
         >
-          <span className="w-8 h-8 bg-volt text-ink flex items-center justify-center rounded-md transition-transform duration-300 group-hover:rotate-12">
-            <Zap size={18} strokeWidth={2.5} />
-          </span>
+          <img
+            src={brandLogo}
+            alt="7plus Fitness logo"
+            className="w-8 h-8 rounded-md object-cover transition-transform duration-300 group-hover:rotate-12"
+          />
           <span className="font-display text-2xl font-extrabold uppercase tracking-tight">
             7<span className="text-volt">plus</span> Fitness
           </span>

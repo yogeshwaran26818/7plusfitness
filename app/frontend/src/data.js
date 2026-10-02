@@ -1,4 +1,7 @@
 import threeDisciplinesImage from "../../photo/ThreeDisciplines2..jpeg";
+import coach1Image from "../../photo/Coach1.jpeg";
+import coach2Image from "../../photo/Coach2.jpeg";
+import coach3Image from "../../photo/Coach3.jpeg";
 
 export const API = process.env.REACT_APP_API_URL || "/api";
 
@@ -28,7 +31,7 @@ export const STUDIO = {
   phone: "095660 77587",
   phoneInternational: "+91 95660 77587",
   whatsapp: "https://wa.me/919566077587",
-  email: "hello@7plusfitness.in",
+  email: "Patturaja1702@gmail.com",
   mapEmbed:
     "https://www.google.com/maps?q=7%20Plus%20Fitness%20Gym%2C%20Sithalapakkam&output=embed",
   mapLink:
@@ -386,42 +389,30 @@ export const WORKOUTS = [
 export const TRAINERS = [
   {
     id: "vikram",
-    name: "VIKRAM RAM",
+    name: "PREM",
     role: "Head Coach — Strength",
-    img: optimizeImage(
-      "https://images.unsplash.com/photo-1758875568823-34bdf47b82dc",
-      900,
-      80,
-    ),
+    img: coach1Image,
     bio: "Ex-national powerlifter with 12+ years under the bar. Vikram has coached over 900 members from first squat to first competition podium.",
     specialties: ["Powerlifting", "Barbell Mechanics", "Hypertrophy"],
-    certs: ["CSCS", "NASM-PES", "IPF Coach L1"],
+    certs: ["CFR PRO", "NASM-PES", "CrossFit L2"],
   },
   {
     id: "ananya",
-    name: "ANANYA SURESH",
+    name: "RAJA",
     role: "HIIT & Conditioning Coach",
-    img: optimizeImage(
-      "https://images.unsplash.com/photo-1781191063026-74332a61d527",
-      900,
-      80,
-    ),
+    img: coach2Image,
     bio: "Former national-level sprinter turned conditioning specialist. Ananya builds engines — expect sled lanes, intervals and zero hiding spots.",
     specialties: ["Metabolic Conditioning", "Sprint Mechanics", "Fat Loss"],
-    certs: ["ISSA-CPT", "CrossFit L2", "USAW L1"],
+    certs: ["NASM", "CPT", "NSCA"],
   },
   {
     id: "karthik",
-    name: "KARTHIK RAJA",
+    name: "ARUN KUMAR",
     role: "Mobility & Rehab Coach",
-    img: optimizeImage(
-      "https://images.unsplash.com/photo-1759300642261-6a1dcd0d19f6",
-      900,
-      80,
-    ),
+    img: coach3Image,
     bio: "Licensed physiotherapist who bridges the gap between rehab and performance. Every member walks out of Foundation Strength moving better.",
     specialties: ["Injury Prehab", "Joint Health", "Breathwork"],
-    certs: ["FRC / Kinstretch", "BPT Physiotherapy", "FMS Level 2"],
+    certs: ["NASM", "FRC", "FMS Level 2"],
   },
 ];
 

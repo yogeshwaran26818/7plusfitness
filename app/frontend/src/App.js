@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import Manifesto from "@/components/Manifesto";
 import Services from "@/components/Services";
+import AssessmentJourney from "@/components/AssessmentJourney";
 import WorkoutStyles from "@/components/WorkoutStyles";
 import Trainers from "@/components/Trainers";
 import GymGallery from "@/components/GymGallery";
@@ -88,6 +89,7 @@ export default function App() {
             <Marquee />
             <Manifesto />
             <Services />
+            <AssessmentJourney />
             <WorkoutStyles />
             <Trainers />
             <GymGallery />

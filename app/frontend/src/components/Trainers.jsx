@@ -54,9 +54,6 @@ export default function Trainers() {
                   >
                     {t.name}
                   </h3>
-                  <p className="text-sm text-neon uppercase tracking-widest mt-1">
-                    {t.role}
-                  </p>
                 </div>
               </div>
               <div className="p-4 sm:p-5">
