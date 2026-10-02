@@ -60,16 +60,6 @@ export default function Trainers() {
                 <p className="text-sm text-slate-400 leading-relaxed">
                   {t.bio}
                 </p>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {t.specialties.map((s) => (
-                    <span
-                      key={s}
-                      className="px-3 py-1 rounded-full bg-elevated border border-edgehi text-xs text-slate-300"
-                    >
-                      {s}
-                    </span>
-                  ))}
-                </div>
                 <div
                   className="mt-3 pt-3 border-t border-edge flex flex-wrap gap-x-4 gap-y-2"
                   data-testid={`trainer-certs-${t.id}`}

@@ -2,6 +2,8 @@ import threeDisciplinesImage from "../../photo/ThreeDisciplines2..jpeg";
 import coach1Image from "../../photo/Coach1.jpeg";
 import coach2Image from "../../photo/Coach2.jpeg";
 import coach3Image from "../../photo/Coach3.jpeg";
+import trainingManagerImage from "../../photo/image1.jpeg";
+import personalizedTrainingImage from "../../photo/image2.jpeg";
 
 export const API = process.env.REACT_APP_API_URL || "/api";
 
@@ -392,8 +394,7 @@ export const TRAINERS = [
     name: "PREM",
     role: "Head Coach — Strength",
     img: coach1Image,
-    bio: "Ex-national powerlifter with 12+ years under the bar. Vikram has coached over 900 members from first squat to first competition podium.",
-    specialties: ["Powerlifting", "Barbell Mechanics", "Hypertrophy"],
+    bio: "National-level athlete and certified fitness, nutrition & supplementation professional. As a hybrid athlete, I combine strength, conditioning, and endurance to help members build complete, sustainable performance.",
     certs: ["CFR PRO", "NASM-PES", "CrossFit L2"],
   },
   {
@@ -401,8 +402,7 @@ export const TRAINERS = [
     name: "RAJA",
     role: "HIIT & Conditioning Coach",
     img: coach2Image,
-    bio: "Former national-level sprinter turned conditioning specialist. Ananya builds engines — expect sled lanes, intervals and zero hiding spots.",
-    specialties: ["Metabolic Conditioning", "Sprint Mechanics", "Fat Loss"],
+    bio: "ISSA-certified fitness professional with national bodybuilding competition experience. With 400+ members coached, I help clients build strength, improve performance, and achieve measurable results.",
     certs: ["NASM", "CPT", "NSCA"],
   },
   {
@@ -410,8 +410,7 @@ export const TRAINERS = [
     name: "ARUN KUMAR",
     role: "Mobility & Rehab Coach",
     img: coach3Image,
-    bio: "Licensed physiotherapist who bridges the gap between rehab and performance. Every member walks out of Foundation Strength moving better.",
-    specialties: ["Injury Prehab", "Joint Health", "Breathwork"],
+    bio: "Master Personal Trainer dedicated to building strength, mobility, and confidence. Every member leaves Foundation Strength moving better, feeling stronger, and ready to perform at their best.",
     certs: ["NASM", "FRC", "FMS Level 2"],
   },
 ];
@@ -601,7 +600,7 @@ export const SERVICES = [
   {
     id: "manager",
     title: "Training Manager",
-    img: WORKOUTS[1].img,
+    img: trainingManagerImage,
     description:
       "Your first step into 7plus. Our Training Managers build a custom plan around your goals, lifestyle, and fitness level.",
   },
@@ -622,7 +621,7 @@ export const SERVICES = [
   {
     id: "personal",
     title: "Personalized Training",
-    img: TRAINERS[0].img,
+    img: personalizedTrainingImage,
     description:
       "One-on-one coaching covering workouts, nutrition, recovery, and motivation to fast-track your transformation.",
   },

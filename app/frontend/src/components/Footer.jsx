@@ -1,4 +1,4 @@
-import { Zap, Instagram, Youtube, Facebook } from "lucide-react";
+import { Zap, Instagram, Facebook } from "lucide-react";
 import { STUDIO, scrollToId } from "@/data";
 
 export default function Footer() {
@@ -22,16 +22,24 @@ export default function Footer() {
             </p>
             <div className="mt-6 flex gap-3">
               {[
-                { icon: Instagram, label: "Instagram" },
-                { icon: Youtube, label: "YouTube" },
-                { icon: Facebook, label: "Facebook" },
-              ].map(({ icon: Icon, label }) => (
+                {
+                  icon: Instagram,
+                  label: "Instagram",
+                  href: "https://www.instagram.com/7plus_fitness_studio?stkn=Mm5uZWJrZzJtMW1s",
+                },
+                {
+                  icon: Facebook,
+                  label: "Facebook",
+                  href: "https://www.facebook.com/share/19cLwT2Lo4/",
+                },
+              ].map(({ icon: Icon, label, href }) => (
                 <a
                   key={label}
-                  href="#"
+                  href={href}
                   aria-label={label}
+                  target="_blank"
+                  rel="noreferrer"
                   data-testid={`footer-social-${label.toLowerCase()}`}
-                  onClick={(e) => e.preventDefault()}
                   className="w-10 h-10 rounded-full border border-edgehi flex items-center justify-center text-slate-400 hover:text-volt hover:border-volt transition-colors"
                 >
                   <Icon size={17} />
