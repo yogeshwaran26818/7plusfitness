@@ -30,9 +30,9 @@ export const STUDIO = {
     "Sankarapuram junction, Ottiyampakkam Main Road, Sithalapakkam, Chennai 600131",
   addressFull:
     "Sankarapuram junction, Ottiyampakkam Main Road, Sithalapakkam, Chennai, Tamil Nadu 600131",
-  phone: "095660 77587",
-  phoneInternational: "+91 95660 77587",
-  whatsapp: "https://wa.me/919566077587",
+  phone: "+91 9952949953",
+  phoneInternational: "+91 9952949953",
+  whatsapp: "https://wa.me/919952949953",
   email: "Patturaja1702@gmail.com",
   mapEmbed:
     "https://www.google.com/maps?q=7%20Plus%20Fitness%20Gym%2C%20Sithalapakkam&output=embed",
@@ -599,10 +599,10 @@ export const GALLERY = [
 export const SERVICES = [
   {
     id: "manager",
-    title: "Training Manager",
+    title: "Head Coach",
     img: trainingManagerImage,
     description:
-      "Your first step into 7plus. Our Training Managers build a custom plan around your goals, lifestyle, and fitness level.",
+      "Your first step into 7plus. Our Head Coaches build a custom plan around your goals, lifestyle, and fitness level.",
   },
   {
     id: "classes",
