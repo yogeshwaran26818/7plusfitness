@@ -7,16 +7,25 @@ import image5 from "../../../photo/enhancedclient5.jpeg";
 import image6 from "../../../photo/enhancedclient6.jpeg";
 import image7 from "../../../photo/enhancedclient7.jpeg";
 import image8 from "../../../photo/enhancedclient8.jpeg";
+import clienttt from "../../../photo/clienttt.jpeg";
+import row31 from "../../../photo/row3-1.jpeg";
+import row32 from "../../../photo/row3-2.jpeg";
+import row33 from "../../../photo/row3-3.jpeg";
+import row34 from "../../../photo/row3-4.jpeg";
 
 const TRANSFORMATION_IMAGES = [
-  image1,
   image2,
+  clienttt,
   image3,
   image4,
   image5,
-  image6,
+  image1,
   image7,
   image8,
+  row31,
+  row32,
+  row33,
+  row34,
 ];
 
 export default function TransformationGallery() {
@@ -44,7 +53,7 @@ export default function TransformationGallery() {
               alt={`100 days transformation client ${index + 1}`}
               loading="lazy"
               decoding="async"
-              className="h-full w-full object-contain"
+              className="h-full w-full object-cover"
             />
           </motion.div>
         ))}

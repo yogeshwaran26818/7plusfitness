@@ -391,7 +391,7 @@ export const WORKOUTS = [
 export const TRAINERS = [
   {
     id: "ananya",
-    name: "RAJA",
+    name: "Raja",
     role: "HIIT & Conditioning Coach",
     img: coach2Image,
     bio: "ISSA-certified fitness professional with national bodybuilding competition experience. With 400+ members coached, I help clients build strength, improve performance, and achieve measurable results.",
@@ -399,7 +399,7 @@ export const TRAINERS = [
   },
   {
     id: "karthik",
-    name: "ARUN KUMAR",
+    name: "Arun Kumar",
     role: "Mobility & Rehab Coach",
     img: coach3Image,
     bio: "Master Personal Trainer dedicated to building strength, mobility, and confidence. Every member leaves Foundation Strength moving better, feeling stronger, and ready to perform at their best.",
@@ -407,7 +407,7 @@ export const TRAINERS = [
   },
   {
     id: "vikram",
-    name: "PREM",
+    name: "Prem",
     role: "Head Coach — Strength",
     img: coach1Image,
     bio: "National-level athlete and certified fitness, nutrition & supplementation professional. As a hybrid athlete, I combine strength, conditioning, and endurance to help members build complete, sustainable performance.",

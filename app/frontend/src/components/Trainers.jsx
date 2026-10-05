@@ -49,10 +49,10 @@ export default function Trainers() {
                 <div className="absolute inset-0 bg-gradient-to-t from-panel via-panel/20 to-transparent" />
                 <div className="absolute bottom-0 inset-x-0 p-4">
                   <h3
-                    className="font-display text-2xl font-extrabold uppercase tracking-tight"
+                    className="font-display text-2xl font-extrabold tracking-tight"
                     data-testid={`trainer-name-${t.id}`}
                   >
-                    {t.name}
+                    Mr. {t.name}
                   </h3>
                 </div>
               </div>
