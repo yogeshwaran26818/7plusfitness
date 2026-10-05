@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Star, TrendingUp } from "lucide-react";
 import { GOOGLE_BUSINESS, TRANSFORMATIONS } from "@/data";
+import TransformationGallery from "@/components/TransformationGallery";
 
 function ReviewStars({ rating }) {
   return (
@@ -148,6 +149,8 @@ export default function SocialProof() {
             </div>
           )}
         </div>
+
+        <TransformationGallery />
       </div>
     </section>
   );

@@ -390,14 +390,6 @@ export const WORKOUTS = [
 
 export const TRAINERS = [
   {
-    id: "vikram",
-    name: "PREM",
-    role: "Head Coach — Strength",
-    img: coach1Image,
-    bio: "National-level athlete and certified fitness, nutrition & supplementation professional. As a hybrid athlete, I combine strength, conditioning, and endurance to help members build complete, sustainable performance.",
-    certs: ["CFR PRO", "NASM-PES", "CrossFit L2"],
-  },
-  {
     id: "ananya",
     name: "RAJA",
     role: "HIIT & Conditioning Coach",
@@ -412,6 +404,14 @@ export const TRAINERS = [
     img: coach3Image,
     bio: "Master Personal Trainer dedicated to building strength, mobility, and confidence. Every member leaves Foundation Strength moving better, feeling stronger, and ready to perform at their best.",
     certs: ["NASM", "FRC", "FMS Level 2"],
+  },
+  {
+    id: "vikram",
+    name: "PREM",
+    role: "Head Coach — Strength",
+    img: coach1Image,
+    bio: "National-level athlete and certified fitness, nutrition & supplementation professional. As a hybrid athlete, I combine strength, conditioning, and endurance to help members build complete, sustainable performance.",
+    certs: ["CFR PRO", "NASM-PES", "CrossFit L2"],
   },
 ];
 
