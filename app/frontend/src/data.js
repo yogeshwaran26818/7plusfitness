@@ -32,7 +32,8 @@ export const STUDIO = {
     "Sankarapuram junction, Ottiyampakkam Main Road, Sithalapakkam, Chennai, Tamil Nadu 600131",
   phone: "+91 9952949953",
   phoneInternational: "+91 9952949953",
-  whatsapp: "https://wa.me/919952949953",
+  whatsapp:
+    "https://api.whatsapp.com/send/?phone=919952949953&text&type=phone_number&app_absent=0",
   email: "Patturaja1702@gmail.com",
   mapEmbed:
     "https://www.google.com/maps?q=7%20Plus%20Fitness%20Gym%2C%20Sithalapakkam&output=embed",
